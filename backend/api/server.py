@@ -5,6 +5,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def home():
+    return 'Hello!'
+
 @app.route('/get_location')
 def get_location():
     responce = jsonify( {
