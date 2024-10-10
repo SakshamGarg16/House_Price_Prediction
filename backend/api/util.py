@@ -36,11 +36,11 @@ def retrieve_location():
     global _location_data
     global _model
     
-    with open(r'D:\Python\Project\Server\artifact\Columns.json') as f:
+    with open(r'api\artifact\Columns.json') as f:
         _whole_data=json.load(f)['data_columns']
         _location_data = _whole_data[3:]
 
-    with open (r'D:\Python\Project\Server\artifact\House_Price_Prediction','rb') as f:
+    with open (r'api\artifact\House_Price_Prediction','rb') as f:
         _model = pickle.load(f)
 
 if __name__ == ('__main__'):
