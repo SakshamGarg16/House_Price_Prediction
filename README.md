@@ -24,8 +24,7 @@ This project is a web application that predicts home prices in Bangalore based o
 
 - **Frontend**: React, Axios, Formik, Yup
 - **Backend**: Flask, Flask-CORS
-- **Database**: (If applicable, specify your database here)
-- **Deployment**: Vercel (for frontend), (Your chosen hosting service for backend)
+- **Deployment**: Vercel
 
 ## Installation
 
