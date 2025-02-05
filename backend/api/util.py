@@ -1,7 +1,7 @@
 import json
 import pickle
 import numpy as np
-from decimal import Decimal, ROUND_HALF_UP
+from pathlib import Path
 
 def predict(sqft,bath,bhk,location):
     retrieve_location()
@@ -36,11 +36,18 @@ def retrieve_location():
     global _location_data
     global _model
     
-    with open(r'api\artifact\Columns.json') as f:
+    # Get the directory of the current file
+    current_dir = Path(__file__).parent
+
+    # Construct the full path
+    model_path = current_dir / 'artifact' / 'Columns.json'
+    House_path = current_dir / 'artifact' / 'House_Price_Prediction'
+    
+    with open(model_path) as f:
         _whole_data=json.load(f)['data_columns']
         _location_data = _whole_data[3:]
 
-    with open (r'api\artifact\House_Price_Prediction','rb') as f:
+    with open (House_path,'rb') as f:
         _model = pickle.load(f)
 
 if __name__ == ('__main__'):
