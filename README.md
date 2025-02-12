@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Bangalore Home Price Prediction
 
 This project is a web application that predicts home prices in Bangalore based on various features such as square footage, number of bedrooms, number of bathrooms, and location. The application is built using React for the frontend and Flask for the backend.
