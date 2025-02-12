@@ -2,4 +2,5 @@ Flask
 Flask-CORS
 numpy
 pathlib
+gunicorn
 # Add any other dependencies your app needs
