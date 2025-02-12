@@ -1,6 +1,5 @@
 Flask
 Flask-CORS
-pickle
 json
 numpy
 pathlib
