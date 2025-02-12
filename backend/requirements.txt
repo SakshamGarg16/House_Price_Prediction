@@ -3,4 +3,5 @@ Flask-CORS
 numpy
 pathlib
 gunicorn
+scikit-learn
 # Add any other dependencies your app needs
