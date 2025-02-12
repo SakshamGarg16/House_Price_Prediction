@@ -1,6 +1,5 @@
 Flask
 Flask-CORS
-json
 numpy
 pathlib
 # Add any other dependencies your app needs
