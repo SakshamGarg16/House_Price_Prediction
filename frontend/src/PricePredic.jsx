@@ -6,7 +6,7 @@ import axios from "axios";
 
 const submitFormToAPI = async (formData) => {
     try {
-      const retapi = await axios.post('http://127.0.0.1:5000/predict',formData)
+      const retapi = await axios.post('https://house-price-prediction-o2uh.onrender.com/predict',formData)
       return retapi.data.estimated
     } catch (error) {
       console.log(error)
@@ -38,7 +38,7 @@ export default function Price(){
         const fetchLocations = async () => {
         try {
             
-            const locationData = await axios.get('http://127.0.0.1:5000/get_location');
+            const locationData = await axios.get('https://house-price-prediction-o2uh.onrender.com/get_location');
             
             setLocations(locationData.data.location);
         } catch (error) {
